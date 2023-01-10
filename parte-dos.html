@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="buttons-wrapper">
+      <div>
+        <button
+          onclick="prevPage()"
+          id="pageNumberPrev"
+          value="second"
+          class="btn"
+        >
+          << PARTE UNO
+        </button>
+      </div>
+      <div>
+        <button onclick="nextPage()" id="pageNumber" value="second" class="btn">
+          PARTE TRES >>
+        </button>
+      </div>
+    </div>
+    <h1>Parte 2</h1>
+
+    <main class="principal-container__stickers">
+      <div class="sticker-wrapper">
+        <img
+          class="sticker"
+          src="./assets/imgs/chicken-4849979_1920.jpg"
+          alt="chikens"
+        />
+        <div>
+          <select name="" id="firstNumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+      <div class="sticker-wrapper">
+        <img
+          class="sticker"
+          src="./assets/imgs/ireland-1985088_1920.jpg"
+          alt="ovejas"
+        />
+        <div>
+          <select name="" id="secondNumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+      <div class="sticker-wrapper">
+        <img
+          class="sticker"
+          src="./assets/imgs/piggy-1332259_1920.jpg"
+          alt="cerdos"
+        />
+        <div>
+          <select name="" id="thirdNumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+    </main>
+    <button onclick="onClickHandlerSecond()">Verificar</button>
+    <div id="message"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

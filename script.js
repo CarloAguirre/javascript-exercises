@@ -22,7 +22,7 @@ const onClickHandlerSecond = () => {
 
   var totalStickers = firstNumberValue + secondNumberValue + thirdNumberValue;
 
-  if (totalStickers < 10) {
+  if (totalStickers <= 10) {
     document.getElementById(
       "message"
     ).innerHTML = `<p>Llevas ${totalStickers} stickers.</p>`;

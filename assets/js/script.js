@@ -20,16 +20,14 @@ const onClickHandlerSecond = () => {
   var secondNumberValue = Number(secondNumber.value);
   var thirdNumberValue = Number(thirdNumber.value);
 
+  var message = document.getElementById("message")
+
   var totalStickers = firstNumberValue + secondNumberValue + thirdNumberValue;
 
   if (totalStickers <= 10) {
-    document.getElementById(
-      "message"
-    ).innerHTML = `<p>Llevas ${totalStickers} stickers.</p>`;
+    message.innerHTML = `<p>Llevas ${totalStickers} stickers.</p>`;
   } else {
-    document.getElementById(
-      "message"
-    ).innerHTML = `<p>Llevas demasiados stickers.</p>`;
+    message.innerHTML = `<p>Llevas demasiados stickers.</p>`;
   }
 };
 // Parte 3 //

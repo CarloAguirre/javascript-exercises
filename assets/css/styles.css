@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 3vw;
+  padding-bottom: 3vw;
 }
 .sticker-wrapper {
   display: flex;

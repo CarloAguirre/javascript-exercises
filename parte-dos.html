@@ -27,6 +27,7 @@
     </div>
     <h1>Parte 2</h1>
 
+    <p>Puedes llevar hasta 10 stickers en total.</p>
     <main class="principal-container__stickers">
       <div class="sticker-wrapper">
         <img
@@ -36,6 +37,7 @@
         />
         <div>
           <select name="" id="firstNumber">
+            <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -57,6 +59,7 @@
         />
         <div>
           <select name="" id="secondNumber">
+            <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -78,6 +81,7 @@
         />
         <div>
           <select name="" id="thirdNumber">
+            <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -93,7 +97,9 @@
       </div>
     </main>
     <button onclick="onClickHandlerSecond()">Verificar</button>
-    <div id="message"></div>
+    <div id="message">
+      <p>Llevas 0 stickers.</p>
+    </div>
 
     <script src="./assets/js/script.js"></script>
   </body>

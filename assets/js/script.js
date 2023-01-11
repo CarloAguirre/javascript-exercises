@@ -3,6 +3,8 @@ var firstNumber = document.querySelector("#firstNumber");
 var secondNumber = document.querySelector("#secondNumber");
 var thirdNumber = document.querySelector("#thirdNumber");
 
+var message = document.getElementById("message")
+
 // Parte 1 //
 var imgWrapper = document.querySelector("#img-wrapper");
 
@@ -19,8 +21,6 @@ const onClickHandlerSecond = () => {
   var firstNumberValue = Number(firstNumber.value);
   var secondNumberValue = Number(secondNumber.value);
   var thirdNumberValue = Number(thirdNumber.value);
-
-  var message = document.getElementById("message")
 
   var totalStickers = firstNumberValue + secondNumberValue + thirdNumberValue;
 
@@ -39,11 +39,11 @@ const onClickHandlerThird = () => {
   var password = `${firstNumberValue}${secondNumberValue}${thirdNumberValue}`;
 
   if (password == 911) {
-    document.getElementById("message").innerHTML = `<p>password 1 correcto</p>`;
+   message.innerHTML = `<p>password 1 correcto</p>`;
   } else if (password == 714) {
-    document.getElementById("message").innerHTML = `<p>password 2 correcto</p>`;
+   message.innerHTML = `<p>password 2 correcto</p>`;
   } else {
-    document.getElementById("message").innerHTML = `<p>password incorrecto</p>`;
+   message.innerHTML = `<p>password incorrecto</p>`;
   }
 };
 
